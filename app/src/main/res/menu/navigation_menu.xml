@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<group android:id="@+id/grupo1">
+
+		<item
+			android:id="@+id/miPhoneConfg"
+			android:icon="@drawable/re_de"
+			android:title="@string/network_mobile"/>
+
+	</group>
+
+	<group android:id="@+id/grupo2">
+
+		<item android:id="@+id/miSettings"
+			android:icon="@drawable/p_o"
+			android:title="@string/settings"/>
+
+	</group>
+
+	<group android:id="@+id/grupo3">
+
+		<item android:id="@+id/miContato"
+			android:icon="@drawable/w_128"
+			android:title="@string/Contato_app"/>
+
+	</group>
+
+	<group android:id="@+id/grupo4">
+
+		<item android:id="@+id/miAvaliarPlaystore"
+			android:icon="@drawable/h_t"
+			android:title="@string/rate_app"/>
+
+	</group>
+
+	<group android:id="@+id/grupo5">
+
+		<item
+			android:id="@+id/miAbout"
+			android:icon="@drawable/ic_error_outline_black_24dp"
+			android:title="@string/about"/>
+
+	</group>
+
+
+
+</menu>

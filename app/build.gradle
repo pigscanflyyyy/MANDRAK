@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+//MOD CRIADO POR @JEFERSONBR, por favor mantenha os créditos ;)
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId 'com.x.net'
+		minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName '1.0'
+		//multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	//api 'com.android.support:multidex:1.0.3'
+	
+    //api fileTree(dir: 'libs', include: ['*.jar'])
+	
+    /*api ('android.arch.core:runtime:+') {
+        force = true
+    }*/
+	
+	// support libs
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:preference-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+	
+	// outros
+	implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.android.gms:play-services-ads-lite:11.8.0'
+	
+	//11.8.0
+	//api 'com.scottyab:secure-preferences-lib:0.1.7'
+	//compile 'com.google.android.gms:play-services-ads-lite:15.0.1'
+	//compile 'com.flurry.android:analytics:12.3.0'
+	//api 'com.flurry.android:analytics:12.1.0'
+	//api 'com.android.support:multidex:1.0.3'
+	
+	implementation project(':service')
+    implementation project(':style')
+}

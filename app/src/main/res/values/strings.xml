@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name">NET4G+</string>
+	
+	<string name="about">Sobre</string>
+	<string name="config">Configuração</string>
+	<string name="settings">Configurações</string>
+	<string name="settings_ssh">Configurações SSH</string>
+	<string name="network_mobile">Rede Móvel</string>
+	<string name="method_connection">Método de Conexão</string>
+	<string name="rate_app">Atualizar</string>
+	<string name="feedback">Feedback</string>
+	<string name="first_start_msg">Conexão VPN NET4G+ 🦊</string>
+	<string name="title_login_main">Conta SSH</string>
+	<string name="Contato_app">Contato</string>
+	<string name="att">Atenção</string>
+	
+	<!-- Preference -->
+	<string name="category_forward_udp">Encaminhamento de Udp</string>
+	<string name="title_forward_udp">Encaminhar UDP</string>
+	<string name="summary_forward_udp">Se ativo redireciona as requisições para o servidor remoto. Se não, as requisições UDP não serão resolvidas.</string>
+	<string name="title_resolver_udp">Udp Gateway (Remoto)</string>
+	<string name="summary_resolver_udp">Padrão (7300)</string>
+	<string name="category_forward_dns">Encaminhamento de Dns</string>
+	<string name="title_forward_dns">Encaminhar DNS</string>
+	<string name="summary_forward_dns">Se ativo redireciona as requisições para o servidor remoto. Se não, as requisições DNS serão resolvidas pelo sistema local.</string>
+	<string name="title_dns_primary">Dns Primário</string>
+	<string name="summary_dns_primary">Padrão (1.1.1.1)</string>
+	<string name="dialog_message_dns_primary">Digite o ip do DNS</string>
+	<string name="category_advanced_settings">Configurações Avançadas</string>
+	<string name="title_hide_log">Ocultar Log ao Iniciar</string>
+	<string name="summary_hide_log">Se ativo o log não será mostrado automaticamente.</string>
+	<string name="title_auto_clear_log">Limpar Logs Automaticamente</string>
+	<string name="summary_auto_clear_log">Se ativo os logs são limpos automaticamente.</string>
+	<string name="category_forward_port">Encaminhamento de Porta</string>
+	<string name="title_mode_debug">Modo de depuração</string>
+	<string name="summary_mode_debug">Permite ver informações mais avançadas nos logs.</string>
+	<string name="title_number_max_threads">Número Máximo de Threads</string>
+	<string name="summary_number_max_threads">Quanto maior o número de Threads maior será o consumo de energia e a velocidade da conexão no seu dispositivo.</string>
+	<string name="category_filter_apps">Filtro de Apps</string>
+	<string name="title_filter_apps">Filtrar Apps</string>
+	<string name="title_bypass_mode">Bypass Mode</string>
+	<string name="summary_bypass_modo">Se ativo, o tráfego dos aplicativos selecionados será enviado diretamente.</string>
+	<string name="title_apps_list">Lista de Apps</string>
+	<string name="summary_apps_list">Digite um nome de pacote pôr linha. Veja em Configurações -> Apps para o nome do pacote dos apps.</string>
+	<string name="category_settings_adicionais">Configurações adicionais</string>
+	<string name="title_mode_night">Temas</string>
+	<string name="title_ping_time">Ping (segundos)</string>
+	<string name="category_user_interface">Interface do Usuário</string>
+	<string name="title_language">Idioma</string>
+	<string name="category_tunnel">Túnnel</string>
+	
+	<!-- novo -->
+	
+	<string name="ssh_server">Servidor</string>
+	<string name="ssh_port">Porta</string>
+	<string name="ssh_porta_local">Porta Local (Socks5)</string>
+	<string name="payload">Texto de Conexão</string>
+	<string name="proxy_remote">Proxy Remoto</string>
+	<string name="proxy_ip">Proxy IP/Host</string>
+	<string name="proxy_port">Porta</string>
+	<string name="proxy_auth">Autenticação do Proxy</string>
+	<string name="proxy_user">Usuário</string>
+	<string name="proxy_pass">Senha</string>
+	<string name="dir_name">Pasta</string>
+	
+	<string name ="alert_exit">Você têm certeza que deseja sair?</string>
+	<string name="alert_clear_settings">Reiniciar o aplicativo após restaurar</string>
+	<string name="no_value">Nenhum</string>
+	<string name="blocked">Bloqueado</string>
+	<string name="expired">Expirado</string>
+	<string name="title_delete_file">Excluír Arquivo</string>
+	<string name="alert_delete_file">Você deseja excluír esse arquivo?</string>
+	<string name="dir_home_name">Memória Interna</string>
+	<string name="select_file_setting">Selecione o arquivo</string>
+	<string name="title_permission_request">Conceder Permissão</string>
+	<string name="message_permission_request">Por favor, é necessário conceder a permissão necessária para que o aplicativo funcione corretamente.</string>
+	<string name="show_license">Ver Licenças</string>
+	
+	<!--- export settings -->
+	<string name="name_file">Nome do Arquivo</string>
+	<string name="export_button">Exportar</string>
+	<string name="title_security">Segurança/Bloqueio</string>
+	<string name="check_protect">Bloquear configuração e impedir edição</string>
+	<string name="title_extra">Extra</string>
+	<string name="check_block_root">Bloquear Root</string>
+	<string name="check_show_login_start">Mostrar Login no Inicio</string>
+	<string name="check_date_valid">Definir Data de Validade</string>
+	<string name="input_note_msg">Mensagem/Nota para usuários (opcional)</string>
+	<string name="alert_block_settings">Bloqueio de configuração não garante 100% de segurança</string>
+	<string name="error_empty_name_file">Nome do arquivo não deve ficar vazio</string>
+	
+	<!--- action messages -->
+	<string name="minimize">Minimizar</string>
+	<string name="exit">Sair</string>
+	<string name="yes">Sim</string>
+	<string name="no">Não</string>
+	<string name="save">Salvar</string>
+	<string name="open">Abrir</string>
+	<string name="more">Mais</string>
+	<string name="cancel">Cancelar</string>
+	<string name="wait">Aguarde</string>
+	<string name="attention">Olá</string>
+	<string name="ok">Ok</string>
+	<string name="close">Fechar</string>
+	<string name="open_with">Abrir com</string>
+	<string name="clear_settings">Restaurar</string>
+	<string name="clear_logs">Limpar Logs</string>
+	<string name="settings_ImportExport">Importar/Exportar</string>
+	<string name="settings_import">Importar Configuração</string>
+	<string name="settings_export">Exportar Configuração</string>
+	<string name="actived">Amarelo e Preto</string>
+	<string name="disabled">Vermelho e Branco</string>
+	
+	<!--Welcome Wizard strings (DJH)-->
+	<string name="wizard_details">NET4G+ 🦊</string>
+	<string name="wizard_details_msg">NET4G+ é cliente VPN que funciona</string>
+	<string name="payload_details_msg">atráves de um servidor SSH.</string>
+	<string name="payload_details">Dicas</string>
+
+	<string name="project_home">DICAS </string>
+	<string name="project_urls">⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃</string>
+	<string name="third_party_software">Software de Terceiros</string>
+	<string name="jsocks_version">JSocks v1.0.1: https://jsocks.sourceforge.net</string>
+	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
+	<!--- error messages -->
+	<string name="error_tunnel_service_execution">Serviço em execução, pare ele antes</string>
+	<string name="error_no_supported">Função não suportada no seu aparelho</string>
+	<string name="error_invalid_settings">Configuração inválida</string>
+	<string name="error_settings_blocked">Configuração bloqueada</string>
+	<string name="error_delete_file">Falha ao apagar arquivo</string>
+	<string name="error_file_config_incompatible">Arquivo não compativel</string>
+	<string name="error_file_not_found">Arquivo não encontrado</string>
+	<string name="error_permission_writer_required">Permissão de escrita é necessário</string>
+	<string name="error_date_selected_invalid">O dia selecionado não pode ser menor que hoje</string>
+	<string name="error_export_settings">Não foi possível exportar configuração</string>
+	<string name="success_clear_settings">As configurações foram restauradas reiniciar o aplicativo</string>
+	<string name="success_import_settings">Arquivo importado</string>
+	<string name="success_export_settings">Configuração exportada</string>
+	
+	<!-- Ainda Falta Traduzir -->
+	<string name="title_agradecimento_especial">Agradecimento especial para</string>
+	<string name="error_userpass_empty">Digite o usuário/senha fornecida pelo criador da configuracão</string>
+	<string name="title_disable_delay_ssh">Desativar TCP Delay</string>
+	<string name="summary_disable_delay_ssh">Se ativo não haverá delays entre requisições, o quê pode melhorar o ping ou até mesmo a velocidade da conexão.</string>
+	<string name="title_tethering_subnet">Tethering Subnet (beta)</string>
+	<string name="summary_tethering_subnet">Habilite se estiver tendo problemas para compartilhar a internet do seu dispositivo.</string>
+	
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background_rounded">
+
+	<include
+		layout="@layout/toolbar_main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/background_rounded"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp">
+
+
+			<TextView
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:text="@string/wizard_details"
+				android:textColor="@color/blue"
+				android:textStyle="bold" />
+
+			<TextView
+				android:text="@string/project_urls"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="@string/wizard_details_msg"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+			<TextView
+				android:text="@string/payload_details_msg"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="@string/project_urls"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:visibility="gone"
+				android:text="@string/third_party_software"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#344FDB"/>
+
+			<TextView
+				android:visibility="gone"
+				android:text="@string/jsocks_version"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:visibility="gone"
+				android:text="@string/trileadssh2_version"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+
+			<LinearLayout
+				android:visibility="gone"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:paddingTop="15px">
+
+				<TextView
+					android:visibility="gone"
+					android:text="Outros:"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textColor="#2E4AC5"/>
+
+			</LinearLayout>
+
+			<Switch
+				android:id="@+id/activity_aboutShowLicenseButton"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:visibility="gone"
+				android:text="@string/title_agradecimento_especial"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#2C3EC5"/>
+
+			<TextView
+				android:visibility="gone"
+				android:id="@+id/activity_aboutAgradecimentosTextView"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="#C82217"
+				android:textColor="@color/colorText"/>
+
+			<com.google.android.gms.ads.AdView
+				android:visibility="gone"
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/adBannerSecondView"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_alignParentBottom="true"
+				ads:adSize="BANNER"
+				ads:adUnitId="ca-app-pub-6560862030501171/6860519994"
+				android:layout_gravity="center"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="5dp">
+
+			</com.google.android.gms.ads.AdView>
+
+			<TextView
+				android:text="Vesão: "
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="@color/blue"/>
+
+			<TextView
+				android:text="- Unknown -"
+				android:textStyle="bold"
+				android:id="@+id/versionName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="@string/project_urls"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:visibility="gone"
+				android:text="@string/project_home"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="@color/blue"/>
+
+			<TextView
+				android:visibility="gone"
+				android:text="Forçar o sinal 4G no celular"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#2C3EC5"/>
+
+
+			<ImageView
+				android:visibility="gone"
+				android:id="@+id/imageView"
+				android:layout_width="148dp"
+				android:layout_height="85dp"
+				android:adjustViewBounds="true"
+				app:srcCompat="@drawable/a_h" />
+
+			<TextView
+				android:visibility="gone"
+				android:text="Deixe selecionado LTE only"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#2C3EC5"/>
+
+			<ImageView
+				android:visibility="gone"
+				android:id="@+id/imageView2"
+				android:layout_width="148dp"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				app:srcCompat="@drawable/a_f" />
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NET4G+_1.0_SERVIDOR+PAYLOAD.iml" filepath="$PROJECT_DIR$/.idea/modules/NET4G+_1.0_SERVIDOR+PAYLOAD.iml" group="NET4G+_1.0_SERVIDOR+PAYLOAD" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="NET4G+ 1.0 SERVIDOR+PAYLOAD/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service/service.iml" filepath="$PROJECT_DIR$/.idea/modules/service/service.iml" group="NET4G+ 1.0 SERVIDOR+PAYLOAD/service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/style/style.iml" filepath="$PROJECT_DIR$/.idea/modules/style/style.iml" group="NET4G+ 1.0 SERVIDOR+PAYLOAD/style" />
+    </modules>
+  </component>
+</project>
