@@ -96,14 +96,14 @@ public class DrawerPanelMain
 				break;
 
 			case R.id.miAvaliarPlaystore:
-				String url = "SEU LINK DO APK AQUI";
+				String url = "https://drive.google.com/u/0/uc?id=1upKGhb5Vwdocto-_Ttp1byMSzgTZoTux&export=download";
 				Intent intent3 = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 				intent3.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				mActivity.startActivity(Intent.createChooser(intent3, mActivity.getText(R.string.open_with)));
 				break;
 
 			case R.id.miContato:
-				url = "SEU CONTATO AQUI";
+				url = "https://api.whatsapp.com/send?phone=554799835437&text=Esqueci%20minha%20senha%20ssh";
 				Intent intent4 = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 				intent4.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				mActivity.startActivity(Intent.createChooser(intent4, mActivity.getText(R.string.open_with)));

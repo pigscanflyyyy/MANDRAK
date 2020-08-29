@@ -285,15 +285,15 @@ public class SocksHttpMainActivity extends BaseActivity
 		Playload = (Spinner) findViewById(R.id.payload);
 
 		List<String> ListaPlayload = new ArrayList<String>();
-		ListaPlayload.add("VIVO 1");
-		ListaPlayload.add("VIVO 2");
-		ListaPlayload.add("VIVO 3");
-		ListaPlayload.add("TIM 1");
-		ListaPlayload.add("TIM 2");
-		ListaPlayload.add("TIM 3");
-		ListaPlayload.add("CLARO 1");
-		ListaPlayload.add("CLARO 2");
-		ListaPlayload.add("OI 1");
+		ListaPlayload.add("Payload-[01]");
+		ListaPlayload.add("Payload-[02]");
+		ListaPlayload.add("Payload-[03]");
+		//ListaPlayload.add("TIM 1");
+		//ListaPlayload.add("TIM 2");
+		//ListaPlayload.add("TIM 3");
+		//ListaPlayload.add("CLARO 1");
+		//ListaPlayload.add("CLARO 2");
+		//ListaPlayload.add("OI 1");
 		ArrayAdapter<String> AdptadorPlayload = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ListaPlayload);
 		AdptadorPlayload.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		// Preenche o Spinner com a lista de servidores
@@ -330,11 +330,11 @@ public class SocksHttpMainActivity extends BaseActivity
 
 					}else if(position == 2){
 
-						pref.edit().putString(Settings.CUSTOM_PAYLOAD_KEY, "CONNECT 127.0.0.1:22[split][lf] HTTP/1.0 [lf]Host: www.Alipay.com[rotate=HOST ][crlf][crlf][").apply();
+						pref.edit().putString(Settings.CUSTOM_PAYLOAD_KEY, "[protocol] [crlf]Host: www.joox.com[crlf][crlf][crlf]X-Online-Host: www.pinterest.com;www.garena.com.com[crlf][crlf]").apply();
 
 					}else if(position == 3){
 
-						pref.edit().putString(Settings.CUSTOM_PAYLOAD_KEY, "CONNECT 127.0.0.1:22[split][lf] HTTP/1.0 [lf]Host: www.google.com[rotate=HOST ][crlf][crlf][").apply();
+						pref.edit().putString(Settings.CUSTOM_PAYLOAD_KEY, "[protocol] [crlf]Host: www.joox.com[crlf][crlf][crlf]X-Online-Host: www.pinterest.com;www.garena.com.com[crlf][crlf]").apply();
 
 					}else if(position == 4){
 
@@ -382,10 +382,10 @@ public class SocksHttpMainActivity extends BaseActivity
 
 		// Aqui sao os nomes que vcs quiserem pro servidor, pode ser oq vc quiser(nao importa)
 		List<String> ListaServidores = new ArrayList<String>();
-		ListaServidores.add("VIVO");
-		ListaServidores.add("TIM");
-		ListaServidores.add("CLARO");
-		ListaServidores.add("OI ");
+		ListaServidores.add("Server-[01]");
+		ListaServidores.add("Server-[02]");
+		ListaServidores.add("Server-[03]");
+		//ListaServidores.add("OI ");
 
 
 		// Criando adaptador para receber os servidores
@@ -420,30 +420,30 @@ public class SocksHttpMainActivity extends BaseActivity
 
 					if(position == 0) {
 						//Informações do SERVIDOR ########################################################################
-						sPrefs.edit().putString(Settings.SERVIDOR_KEY, "SEU IP AQUI").apply();
-						sPrefs.edit().putString(Settings.SERVIDOR_PORTA_KEY, "22").apply();
+						sPrefs.edit().putString(Settings.SERVIDOR_KEY, "191.252.192.178").apply();
+						sPrefs.edit().putString(Settings.SERVIDOR_PORTA_KEY, "80").apply();
 						//Informações do SERVIDOR ########################################################################
 
 
 						//Servidor 01 VIVO DIRECT SOCKS 8080,80 | VIVO SQUID 80 SOCKS 8799 ####################
 						sPrefs.edit().putInt(Settings.TUNNELTYPE_KEY, Settings.bTUNNEL_TYPE_SSH_PROXY).apply();
-						sPrefs.edit().putString(Settings.PROXY_IP_KEY, "SEU IP AQUI").apply();
+						sPrefs.edit().putString(Settings.PROXY_IP_KEY, "191.252.192.178").apply();
 						sPrefs.edit().putString(Settings.PROXY_PORTA_KEY, "80").apply();
 						//Servidor 01 ########################################################################
 
 
 					}else if(position == 1){
 						//Servidor 02 TIM ########################################################################
-						sPrefs.edit().putString(Settings.PROXY_IP_KEY, "SEU IP AQUI").apply();
-						sPrefs.edit().putString(Settings.PROXY_PORTA_KEY, "8799").apply();
+						sPrefs.edit().putString(Settings.PROXY_IP_KEY, "191.252.202.254").apply();
+						sPrefs.edit().putString(Settings.PROXY_PORTA_KEY, "80").apply();
 						sPrefs.edit().putInt(Settings.TUNNELTYPE_KEY, Settings.bTUNNEL_TYPE_SSH_PROXY).apply();
                        //Servidor 02 ########################################################################
 
 
 					}else if(position == 2){
 						//Servidor 03 CLARO ########################################################################
-						sPrefs.edit().putString(Settings.PROXY_IP_KEY, "SEU IP AQUI").apply();
-						sPrefs.edit().putString(Settings.PROXY_PORTA_KEY, "8799").apply();
+						sPrefs.edit().putString(Settings.PROXY_IP_KEY, "191.252.222.16").apply();
+						sPrefs.edit().putString(Settings.PROXY_PORTA_KEY, "80").apply();
 						sPrefs.edit().putInt(Settings.TUNNELTYPE_KEY, Settings.bTUNNEL_TYPE_SSH_PROXY).apply();
                          //Servidor 03 ########################################################################
 
@@ -746,7 +746,7 @@ public class SocksHttpMainActivity extends BaseActivity
 				break;
 
 			case R.id.activity_mainAutorText:
-				String url = "Seu contato aqui";
+				String url = "https://api.whatsapp.com/send?phone=554799835437";
 				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				startActivity(Intent.createChooser(intent, getText(R.string.open_with)));
